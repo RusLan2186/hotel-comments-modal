@@ -1,0 +1,53 @@
+@use "./variables" as *;
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+
+  &__page,
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    transition: 0.3s background-color ease;
+
+    &:hover {
+      background-color: $color-pagination-active;
+    }
+  }
+
+  &__arrow {
+    img {
+      width: 6px;
+      height: 11px;
+    }
+
+    &--next {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__page {
+    font-size: 13px;
+    line-height: 20px;
+    color: $color-primary;
+    font-weight: 600;
+
+    &--active {
+      background-color: $color-pagination-active;
+      transition: 0.3s all ease;
+
+      &:hover {
+        background-color: $color-accent;
+        color: $color-surface-base;
+      }
+    }
+  }
+}

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hotel-comments-modal</title>
+  </head>
+  <body>
+    <div class="page">
+      <h1 class="page__title">Страница подбора тура</h1>
+      <button class="page__open-modal button-primary" id="openModal">
+        Открыть комментарии
+      </button>
+    </div>
+
+    <div class="overlay">
+      <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <div class="modal__header">
+          <h2 class="modal__title" id="modalTitle">Комментарии об отеле</h2>
+          <button class="modal__close" id="closeModal" aria-label="Закрыть">
+            <img
+              class="modal__close-icon"
+              src="./src/assets/icons/close.svg"
+              alt="close icon"
+            />
+          </button>
+        </div>
+
+        <form action="#" class="modal__form">
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="Напишите свой комментарий к отелю"
+          />
+          <button class="modal__submit button-primary">
+            Добавить комментарий
+          </button>
+        </form>
+
+        <div class="table-modal">
+          <div class="table-modal__head">
+            <p>Данные о менеджере</p>
+            <p>Комментарий</p>
+            <p>Фото/видео</p>
+          </div>
+
+          <div class="table-modal__body">
+            <div class="table-modal__row">
+              <div class="table-modal__data">
+                <p class="table-modal__data-date">18.10.2019</p>
+                <p class="table-modal__data-name">Евгения Коноплева</p>
+                <p class="table-modal__data-address">
+                  Киев, ул. Соломенская, 33
+                </p>
+
+                <div class="table-modal__phone">
+                  <a
+                    class="table-modal__phone-link"
+                    href="tel:+3 (701) 627-72-36"
+                    >+3 (701) 627-72-36</a
+                  >
+                  <div class="table-modal__phone-icons">
+                    <img src="./src/assets/icons/phone.svg" alt="phone" />
+                    <img src="./src/assets/icons/viber.svg" alt="viber" />
+                    <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-modal__comment">
+                <p>
+                  В номерах чисто, уборка качественная, запах приятный. Персонал
+                  дружелюбный, завтраки разнообразные, хорошее расположение
+                  рядом с морем.
+                </p>
+              </div>
+
+              <div class="table-modal__photos">
+                <div class="table-modal__photos-grid">
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-1.jpg"
+                    alt="hotel-room"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-2.jpg"
+                    alt="hotel-pool"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-3.jpg"
+                    alt="hotel-suite"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-4.jpg"
+                    alt="hotel-building"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-5.jpg"
+                    alt="hotel-view"
+                  />
+
+                  <div class="table-modal__photo--more">
+                    <img
+                      class="table-modal__photo"
+                      src="./src/assets/hotel-photo-1.jpg"
+                      alt="more photos"
+                    />
+                    <p class="table-modal__photo-overlay">+35</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-modal__row">
+              <div class="table-modal__data">
+                <p class="table-modal__data-date">18.10.2019</p>
+                <p class="table-modal__data-name">Евгения Коноплева</p>
+                <p class="table-modal__data-address">
+                  Киев, ул. Соломенская, 33
+                </p>
+
+                <div class="table-modal__phone">
+                  <a
+                    class="table-modal__phone-link"
+                    href="tel:+3 (701) 627-72-36"
+                    >+3 (701) 627-72-36</a
+                  >
+                  <div class="table-modal__phone-icons">
+                    <img src="./src/assets/icons/phone.svg" alt="phone" />
+                    <img src="./src/assets/icons/viber.svg" alt="viber" />
+                    <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-modal__comment">
+                <p>
+                  В номерах чисто, уборка качественная, запах приятный. Персонал
+                  дружелюбный, завтраки разнообразные, хорошее расположение
+                  рядом с морем.
+                </p>
+              </div>
+
+              <div class="table-modal__photos">
+                <div class="table-modal__photos-grid">
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-1.jpg"
+                    alt="hotel-room"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-2.jpg"
+                    alt="hotel-pool"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-3.jpg"
+                    alt="hotel-suite"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="table-modal__row">
+              <div class="table-modal__data">
+                <p class="table-modal__data-date">18.10.2019</p>
+                <p class="table-modal__data-name">Евгения Коноплева</p>
+                <p class="table-modal__data-address">
+                  Киев, ул. Соломенская, 33
+                </p>
+
+                <div class="table-modal__phone">
+                  <a
+                    class="table-modal__phone-link"
+                    href="tel:+3 (701) 627-72-36"
+                    >+3 (701) 627-72-36</a
+                  >
+                  <div class="table-modal__phone-icons">
+                    <img src="./src/assets/icons/phone.svg" alt="phone" />
+                    <img src="./src/assets/icons/viber.svg" alt="viber" />
+                    <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-modal__comment">
+                <p>
+                  Отель очень хороший, территория большая и зеленая, бассейн
+                  чистый. Грязные полотенца с пятнами, в ресторане тараканы, еда
+                  часто холодная.
+                </p>
+              </div>
+
+              <div class="table-modal__photos">
+                <div class="table-modal__photos-grid">
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-1.jpg"
+                    alt="hotel-room"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-2.jpg"
+                    alt="hotel-pool"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="table-modal__row">
+              <div class="table-modal__data">
+                <p class="table-modal__data-date">18.10.2019</p>
+                <p class="table-modal__data-name">Евгения Коноплева</p>
+                <p class="table-modal__data-address">
+                  Киев, ул. Соломенская, 33
+                </p>
+
+                <div class="table-modal__phone">
+                  <a
+                    class="table-modal__phone-link"
+                    href="tel:+3 (701) 627-72-36"
+                    >+3 (701) 627-72-36</a
+                  >
+                  <div class="table-modal__phone-icons">
+                    <img src="./src/assets/icons/phone.svg" alt="phone" />
+                    <img src="./src/assets/icons/viber.svg" alt="viber" />
+                    <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-modal__comment">
+                <p>
+                  Отель очень хороший, территория большая и зеленая, бассейн
+                  чистый. Грязные полотенца с пятнами, в ресторане тараканы, еда
+                  часто холодная.
+                </p>
+              </div>
+
+              <div class="table-modal__photos">
+                <p class="table-modal__photos-text">Фото еще не добавлены</p>
+              </div>
+            </div>
+
+            <div class="table-modal__row">
+              <div class="table-modal__data">
+                <p class="table-modal__data-date">18.10.2019</p>
+                <p class="table-modal__data-name">Евгения Коноплева</p>
+                <p class="table-modal__data-address">
+                  Киев, ул. Соломенская, 33
+                </p>
+
+                <div class="table-modal__phone">
+                  <a
+                    class="table-modal__phone-link"
+                    href="tel:+3 (701) 627-72-36"
+                    >+3 (701) 627-72-36</a
+                  >
+                  <div class="table-modal__phone-icons">
+                    <img src="./src/assets/icons/phone.svg" alt="phone" />
+                    <img src="./src/assets/icons/viber.svg" alt="viber" />
+                    <img src="./src/assets/icons/whatsapp.svg" alt="whatsapp" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="table-modal__comment">
+                <p>
+                  В номерах чисто, уборка качественная, запах приятный. Персонал
+                  дружелюбный, завтраки разнообразные, хорошее расположение
+                  рядом с морем.
+                </p>
+              </div>
+
+              <div class="table-modal__photos">
+                <div class="table-modal__photos-grid">
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-1.jpg"
+                    alt="hotel-room"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-2.jpg"
+                    alt="hotel-pool"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-3.jpg"
+                    alt="hotel-suite"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-4.jpg"
+                    alt="hotel-building"
+                  />
+
+                  <img
+                    class="table-modal__photo"
+                    src="./src/assets/hotel-photo-5.jpg"
+                    alt="hotel-view"
+                  />
+
+                  <div class="table-modal__photo--more">
+                    <img
+                      class="table-modal__photo"
+                      src="./src/assets/hotel-photo-1.jpg"
+                      alt="more photos"
+                    />
+                    <p class="table-modal__photo-overlay">+35</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-pagination pagination">
+          <button
+            class="pagination__arrow pagination__arrow--prev"
+            aria-label="Back"
+          >
+            <img src="./src/assets/icons/icon-arrow.svg" alt="arrow" />
+          </button>
+          <button class="pagination__page pagination__page--active">1</button>
+          <button class="pagination__page">2</button>
+          <button class="pagination__page">3</button>
+          <button class="pagination__page">4</button>
+          <button class="pagination__page">5</button>
+          <button
+            class="pagination__arrow pagination__arrow--next"
+            aria-label="Forward"
+          >
+            <img src="./src/assets/icons/icon-arrow.svg" alt="arrow" />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

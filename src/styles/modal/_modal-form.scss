@@ -1,0 +1,25 @@
+@use "../variables" as *;
+
+.modal {
+  &__form {
+    display: flex;
+    column-gap: 21px;
+    margin-bottom: 19px;
+  }
+
+  &__input {
+    padding: 9px 16px;
+    border: 1px solid $color-border;
+    font-size: 13px;
+    line-height: 16px;
+    color: $color-secondary;
+    max-width: 797px;
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.3s border-color ease;
+
+    &:focus {
+      border-color: $color-accent;
+    }
+  }
+}

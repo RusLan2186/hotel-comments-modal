@@ -1,0 +1,52 @@
+@use "./reset";
+@use "./variables" as *;
+
+@use "./modal/modal";
+@use "./modal/modal-header";
+@use "./modal/modal-form";
+@use "./modal/modal-table";
+@use "./pagination";
+
+@import url("https://fonts.googleapis.com/css2?family=Open%20Sans:wght@400;600;700&display=swap");
+
+
+html {
+  font-size: 16px;
+  scrollbar-gutter: stable;
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: $color-primary;
+  box-sizing: border-box;
+}
+
+.page {
+  max-width: $modal-width;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: $color-primary;
+    margin-bottom: 20px;
+  }
+}
+
+.button-primary {
+  display: flex;
+  background-color: $color-accent;
+  border-radius: 6px;
+  color: $color-surface-base;
+  font-size: 14px;
+  padding: 8px 17px;
+  flex-shrink: 0;
+  transition: 0.3s background-color ease;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
