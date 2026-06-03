@@ -12,11 +12,15 @@
     border: 1px solid $color-border;
     font-size: 13px;
     line-height: 16px;
-    color: $color-secondary;
+    color: rgba($color-primary, 0.5);
     max-width: 797px;
     width: 100%;
     border-radius: 6px;
     transition: 0.3s border-color ease;
+
+    &::placeholder{
+      color:rgba($color-primary, 0.5)
+    }
 
     &:focus {
       border-color: $color-accent;

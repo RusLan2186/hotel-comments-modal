@@ -10,21 +10,19 @@
     max-height: min(432px, calc(100dvh - 320px));
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    overscroll-behavior: contain; 
-
+    overscroll-behavior: contain;
 
     &::-webkit-scrollbar {
       width: 5px;
-      border-radius: 4px;
     }
 
     &::-webkit-scrollbar-track {
-      background: #e7e7e7;
+      background: $color-scrollbar-track;
       border-radius: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
-      background: #80868d;
+      background: $color-scrollbar-thumb;
       border-radius: 4px;
     }
 
@@ -36,17 +34,13 @@
   &__head,
   &__row {
     display: grid;
-
     grid-template-columns:
-      minmax(150px, 229px)
-      minmax(340px, 526px)
+      minmax(100px, 229px)
+      minmax(200px, 526px)
       minmax(200px, 263px);
-    column-gap: 1px;
   }
 
   &__head {
-    flex-shrink: 0;
-
     p {
       background-color: $color-secondary;
       color: $color-surface-base;
@@ -54,11 +48,14 @@
       font-weight: 700;
       font-size: 13px;
       line-height: 20px;
+
+      &:not(:last-child) {
+        border-right: 1px solid $color-border-muted;
+      }
     }
   }
 
   &__row {
-    padding: 8px 0;
     border-bottom: 1px solid $color-border-muted;
 
     &:first-child {
@@ -69,7 +66,9 @@
   &__data,
   &__comment,
   &__photos {
-    padding-left: 12px;
+    padding-left: 11px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border-left: 1px solid $color-border-muted;
     color: $color-primary;
   }
@@ -79,6 +78,7 @@
     flex-direction: column;
     row-gap: 3px;
     font-size: 13px;
+    line-height: 15px;
 
     &-name {
       font-weight: 600;
@@ -111,6 +111,17 @@
     display: flex;
     align-items: center;
     column-gap: 6px;
+
+    .table-modal__phone-icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s opacity ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
 
     img {
       width: 17px;
@@ -171,7 +182,7 @@
 
     font-size: 16px;
     font-weight: 600;
-    line-height: 1;
+    line-height: 15px;
     color: $color-surface-base;
   }
 }

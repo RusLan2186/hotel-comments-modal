@@ -7,7 +7,8 @@
 }
 
 .modal__title {
-  font-size: 24px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
   color: $color-primary;
   padding-top: 24px;
@@ -17,11 +18,14 @@
   position: absolute;
   top: 21px;
   right: 23px;
+  width: 24px;
+  height: 24px;
   background: none;
   border: none;
   cursor: pointer;
   line-height: 1;
   transition: 0.3s opacity ease;
+
 
   &-icon {
     width: 14px;
